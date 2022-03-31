@@ -218,9 +218,11 @@ header {
 
 .category {
     background: var(--color-bg2);
-    padding: 2rem;
+    padding: 1.25rem;
     border-radius: 2rem;
     transition: var(--transition);
+    width: 100%;
+    cursor: pointer;
 }
 
 .category:hover {
@@ -605,7 +607,7 @@ footer ul li a:hover {
            }
 
            .category {
-               padding: 1rem;
+               text-align: justify;
                border-radius: 1rem;
            }
 
