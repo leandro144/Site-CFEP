@@ -222,8 +222,8 @@ header {
     padding: 1.25rem;
     border-radius: 2rem;
     transition: var(--transition);
-    max-width: 100%;
     cursor: pointer;
+    width: 100%;
 }
 
 .category:hover {
@@ -659,6 +659,17 @@ footer ul li a:hover {
 
              .footer__socials {
                  justify-content: center;
+             }
+
+             @media screen and (max-width: 430px) {
+                .categories__right {
+                grid-template-columns: 1fr;
+                gap: 1git rem;
+                }
+
+                .category {
+                padding: 0.625rem;
+                }
              }
       }
 }
