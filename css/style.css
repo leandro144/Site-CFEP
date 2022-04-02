@@ -573,6 +573,16 @@ footer ul li a:hover {
          grid-template-columns: 1fr 1fr;
      }
 
+     /* MEDIA QUERIES CELULARES */
+     
+     @media screen and (max-width: 885px) {
+        .faqs__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 1rem;
+        }
+     }
+
       /* MEDIA QUERIES CELULAR */
 
       @media screen and (max-width: 600px) {
@@ -606,7 +616,7 @@ footer ul li a:hover {
 
            .categories__right {
                grid-template-columns: 1fr 1fr;
-               gap: 0.7rem;
+               gap: 0.6rem;
            }
 
            .category {
