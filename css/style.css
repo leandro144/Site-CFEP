@@ -221,7 +221,7 @@ header {
     padding: 1.25rem;
     border-radius: 2rem;
     transition: var(--transition);
-    width: 100%;
+    max-width: 100%;
     cursor: pointer;
 }
 
@@ -623,6 +623,11 @@ footer ul li a:hover {
             }
 
             /* FAQS */
+
+            
+            .faqs__container {
+                grid-template-columns: 1fr;
+            }
 
             .testimonial__body {
                 padding: 1.2rem;
