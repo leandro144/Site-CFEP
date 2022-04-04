@@ -213,6 +213,7 @@ header {
 .categories__right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.2rem;
 }
 
@@ -221,8 +222,8 @@ header {
     padding: 1.25rem;
     border-radius: 2rem;
     transition: var(--transition);
-    width: 100%;
     cursor: pointer;
+    width: 100%;
 }
 
 .category:hover {
@@ -300,6 +301,7 @@ header {
 .faqs__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -417,6 +419,8 @@ footer ul li a:hover {
     border-top: 1px solid var(--color-bg);
 }
 
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
@@ -518,6 +522,10 @@ footer ul li a:hover {
         color: var(--color-white);
     }
 
+    .window-scroll a {
+        color: var(--color-white);
+    }
+
     /* HEADER */
 
     header {
@@ -558,7 +566,8 @@ footer ul li a:hover {
      /* FAQS */
 
      .faqs {
-         grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr;
      }
 
      .faq {
@@ -569,6 +578,16 @@ footer ul li a:hover {
 
      .footer__container {
          grid-template-columns: 1fr 1fr;
+     }
+
+     /* MEDIA QUERIES CELULARES */
+     
+     @media screen and (max-width: 885px) {
+        .faqs__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 1rem;
+        }
      }
 
       /* MEDIA QUERIES CELULAR */
@@ -604,7 +623,7 @@ footer ul li a:hover {
 
            .categories__right {
                grid-template-columns: 1fr 1fr;
-               gap: 0.7rem;
+               gap: 0.6rem;
            }
 
            .category {
@@ -625,6 +644,11 @@ footer ul li a:hover {
 
             /* FAQS */
 
+            
+            .faqs__container {
+                grid-template-columns: 1fr;
+            }
+
             .testimonial__body {
                 padding: 1.2rem;
             }
@@ -642,6 +666,17 @@ footer ul li a:hover {
 
              .footer__socials {
                  justify-content: center;
+             }
+
+             @media screen and (max-width: 430px) {
+                .categories__right {
+                grid-template-columns: 1fr;
+                gap: 1git rem;
+                }
+
+                .category {
+                padding: 0.625rem;
+                }
              }
       }
 }
