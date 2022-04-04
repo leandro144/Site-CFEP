@@ -212,9 +212,9 @@ header {
 
 .categories__right {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 .category {
@@ -300,7 +300,7 @@ header {
 
 .faqs__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
