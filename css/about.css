@@ -1,3 +1,7 @@
+body {
+    background: var(--color-bg4);
+}
+
 .about__achievements {
     margin-top: 3rem;
 }
@@ -19,7 +23,7 @@
 }
 
 .achievements__card {
-    background: var(--color-bg1);
+    background: var(--color-bg3);
     padding: 1.6rem;
     border-radius: 1rem;
     text-align: center;
@@ -27,8 +31,7 @@
 }
 
 .achievements__card:hover {
-    background: var(--color-bg2);
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.7);
 }
 
 .achievement__icon {
@@ -55,8 +58,7 @@
 /* TEAM */
 
 .team {
-    background: var(--color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    background: var(--color-bg3);
 }
 
 .team__container {
@@ -66,7 +68,7 @@
 }
 
 .team__member {
-    background: var(--color-bg2);
+    background: var(--color-bg4);
     padding: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -76,7 +78,7 @@
 
 .team__member:hover {
     background: transparent;
-    border-color: var(--color-primary);
+    border-color: var(--color-bg4);
 }
 
 .team__member-image img {
@@ -103,7 +105,7 @@
     right: -100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg4);
     border-radius: 1rem 0 0 1rem;
     box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
     transition: var(--transition);

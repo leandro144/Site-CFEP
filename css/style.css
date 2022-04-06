@@ -20,6 +20,8 @@
     --color-bg: #1f2641;
     --color-bg1: #2e3267;
     --color-bg2: #424890;
+    --color-bg3: #0584c8;
+    --color-bg4: #035c94;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -32,7 +34,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: var(--color-bg);
+    background: var(--color-bg3);
 }
 
 .container {
@@ -103,6 +105,7 @@ img {
     background: var(--color-white);
     color: var(--color-black);
     padding: 1rem 2rem;
+    border-radius: 10px;
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
@@ -117,6 +120,7 @@ img {
 .btn-primary {
     background: var(--color-danger);
     color: var(--color-white);
+    padding: 1rem;
 }
 
 /* NAVBAR */
@@ -171,7 +175,7 @@ header {
     position: relative;
     top: 5rem;
     overflow: hidden;
-    height: 70vh;
+    height: 75vh;
     margin-bottom: 5rem;
 }
 
@@ -188,7 +192,7 @@ header {
 }
 
 .categories {
-    background: var(--color-bg1);
+    background: var(--color-bg4);
     height: 32rem;
 }
 
@@ -218,17 +222,19 @@ header {
 }
 
 .category {
-    background: var(--color-bg2);
+    background: var(--color-bg3);
     padding: 1.25rem;
     border-radius: 2rem;
     transition: var(--transition);
     cursor: pointer;
     width: 100%;
+    z-index: 1;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .category:hover {
     z-index: 1;
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.7);
 }
 
 .category:nth-child(2) .category__icon {
@@ -249,7 +255,7 @@ header {
 
 
 .category__icon {
-    background: var(--color-primary);
+    background: var(--color-bg4);
     padding: 0.7rem;
     border-radius: 0.9rem;
 }
@@ -273,7 +279,7 @@ header {
 }
 
 .course {
-    background: var(--color-bg1);
+    background: var(--color-bg4);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -281,7 +287,9 @@ header {
 
 .course:hover {
     background: transparent;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-bg4);
+    border-radius: 5px;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.8);
 }
 
 .course__info {
@@ -294,7 +302,7 @@ header {
 }
 
 .faqs {
-    background: var(--color-bg1);
+    background: var(--color-bg4);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
@@ -311,13 +319,14 @@ header {
     align-items: center;
     gap: 1.4rem;
     height: fit-content;
-    background: var(--color-primary);
+    background: var(--color-white);
     cursor: pointer;
 }
 
 .faq h4 {
     font-size: 1rem;
-    line-height: 2.2;
+    line-height: 2;
+    color: rgb(125, 125, 125);
 }
 
 .faq__icon {
@@ -328,6 +337,11 @@ header {
 .faq p {
     margin-top: 0.8rem;
     display: none;
+    color: #000;
+}
+
+.faq i {
+    color: #035c94;
 }
 
 .faq.open p {
@@ -349,8 +363,8 @@ header {
     height: 6rem;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 1rem;
-    border: 1rem solid var(--color-bg1);
+    margin: 0 auto 0.825rem;
+    border: 1rem solid var(--color-white);
 }
 
 .testimonial__info {
@@ -358,8 +372,13 @@ header {
 }
 
 .testimonial__body {
-    background: var(--color-primary);
-    padding: 2rem;
+    background: var(--color-bg4);
+    padding: 1rem;
+    height: 25vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     position: relative;
 }
@@ -368,7 +387,7 @@ header {
     content: "";
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, transparent, var(--color-primary),var(--color-primary));
+    background: linear-gradient(135deg, transparent, var(--color-bg4),var(--color-bg4));
     width: 3rem;
     height: 3rem;
     position: absolute;
@@ -378,13 +397,14 @@ header {
 }
 
 footer {
-    background: var(--color-bg1);
+    background: var(--color-bg4);
     padding-top: 5rem;
     font-size: 0.9rem;
 }
 
 .footer__container {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
@@ -416,7 +436,7 @@ footer ul li a:hover {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem 0;
-    border-top: 1px solid var(--color-bg);
+    border-top: 2px solid var(--color-bg3);
 }
 
 
