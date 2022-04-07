@@ -429,15 +429,15 @@ header {
 
 .testimonial__body {
     background: var(--color-bg4);
-    padding: 1rem;
-    height: 25vh;
+    padding: 2rem;
+    height: 25%;
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
     position: relative;
 }
+
 
 .testimonial__body::before {
     content: "";
@@ -466,11 +466,11 @@ footer {
 }
 
 .footer__container > div h4 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.0rem;
 }
 
 .footer__1 p {
-    margin: 0 0 0.825rem;
+    margin: 0 ;
 }
 
 footer ul li {
