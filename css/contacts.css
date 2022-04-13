@@ -81,8 +81,8 @@
  textarea {
     width: 100%;
     padding: 1rem;
-    background: var(--color-bg);
-    color: #fff;
+    background: var(--color-white);
+    color: #181818;
 }
 
 .contact__form button {
@@ -95,7 +95,7 @@
 button {
  font-family: inherit;
  font-size: 20px;
- background: royalblue;
+ background: linear-gradient(to left, #00294f, #0080cf);
  color: white;
  padding: 0.7em 1em;
  padding-left: 0.9em;

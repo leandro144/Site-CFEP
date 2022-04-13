@@ -62,14 +62,15 @@ body {
 }
 
 .team__container {
+    place-items: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
 .team__member {
     background: linear-gradient(to right, #00294f, #0080cf);
-    padding: 2rem;
+    padding: 1.25rem;
     border-radius: 5px;
     transition: var(--transition);
     position: relative;
