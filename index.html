@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/play_store_512.png">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +28,12 @@
                 <h5>CFEP</h5>
             </a>
             <ul class="nav__menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contacts.html">Contato</a></li>
-                <li><a href="https://www.cfepmembros.com.br/">Consulta de Inscritos</a></li>
+                <li><a class="link" href="index.html">Início</a></li>
+                <li><a class="link" href="about.html">Sobre</a></li>
+                <li><a class="link" href="cursos.html">Cursos</a></li>
+                <li><a class="link" href="cursos.html">Serviços</a></li>
+                <li><a class="link" href="contacts.html">Contato</a></li>
+                <li><a class="link" href="https://www.cfepmembros.com.br/">Consulta de Inscritos</a></li>
             </ul>
 
             <button id="open-menu-btn"><i class="uil uil-bars"></i></i></button>
@@ -38,19 +41,21 @@
         </div>
     </nav>
 
-
     <header>
         <div class="container header__container">
             <div class="header__left">
-                <h1>Aumente suas habilidades fazendo nossos cursos </h1>
-                <p>O CFEP, firmou sua parceria com a DRM Educação. O vínculo permite que conteúdos educacionais voltados para a formação de professores e pedagogos, leve aos associados e familiares cursos livres na modalidade EAD através da tecnologia educacional da DRM, em alguns casos inclusive somando pontos para o programa  de aperfeiçoamento profissional.</p>
+                <h1 style="color: #fff;">Aumente suas habilidades fazendo nossos cursos </h1>
+                <p>O CFEP, firmou sua parceria com a DRM Educação. O vínculo permite que conteúdos educacionais voltados
+                    para a formação de professores e pedagogos, leve aos associados e familiares cursos livres na
+                    modalidade EAD através da tecnologia educacional da DRM, em alguns casos inclusive somando pontos
+                    para o programa de aperfeiçoamento profissional.</p>
                 <button class="cta">
                     <a href="https://www.drmeducacao.com.br/">
                         <span>Começar agora</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg> 
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
                     </a>
                 </button>
             </div>
@@ -63,39 +68,160 @@
         </div>
     </header>
 
+    <section style="background-color: #fff;" class="popular section" id="popular">
+        <div class="container">
+            <span  class="section__subtitle">Best Choise</span>
+            <h2 class="section__title">
+                Popular Residencies<span>.</span>
+            </h2>
+
+            <div class="popular__container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular1.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular2.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular2.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular3.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular4.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="images/popular5.jpg" alt="" class="popular__img">
+                        <div style="color: #000;" class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Lorem ipsum dolor sit, amet consectetur,
+                                - adipisicing elit Voluptatibus, sapiente.
+                            </p>
+                        </div>
+                    </article>
+                    
+                </div>
+                <div class="swiper-button-next">
+                    <box-icon name='chevron-right'></box-icon>
+                </div>
+                <div class="swiper-button-prev">
+                    <box-icon name='chevron-left'></box-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="categories">
         <div class="container categories__container">
             <div class="categories__left">
                 <h1>Vagas</h1>
                 <p>Verifique abaixo os concursos públicos e oportunidades de emprego com inscrições abertas ou
-                    cujas vagas foram autorizadas e aguardam publicação de edital. (Passe para o lado para ver a vaga).</p>
-                <a class="btn" href="#">Saber Mais</a>
+                    cujas vagas foram autorizadas e aguardam publicação de edital. (Passe para o lado para ver a vaga).
+                </p>
+                <a class="btn btncl" href="#">Saber Mais</a>
             </div>
             <div class="categories__right">
                 <article class="category">
                     <a href="https://www.pciconcursos.com.br/vagas/pedagogo">
                         <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
                         <h5>Pedagogo</h5>
-                        <p>Pedagogia é a área que, busca compreender e analisar os processos de ensino e aprendizagem.</p>
+                        <p>Pedagogia é a área que, busca compreender e analisar os processos de ensino e aprendizagem.
+                        </p>
                     </a>
-                    
+
                 </article>
 
                 <article class="category">
                     <a href="https://www.pciconcursos.com.br/vagas/psicopedagogo">
                         <span class="category__icon"><i class="uil uil-palette"></i></span>
                         <h5>Psicopedagogo</h5>
-                        <p>O objetivo do psicopedagogo é entender o processo que leva o ser humano a assimilar e construir o conhecimento</p>
+                        <p>O objetivo do psicopedagogo é entender o processo que leva o ser humano a assimilar e
+                            construir o conhecimento</p>
                     </a>
-                    
+
                 </article>
 
                 <article class="category">
                     <a href="https://www.pciconcursos.com.br/vagas/professor">
                         <span class="category__icon"><i class="uil uil-dollar-alt"></i></span>
                         <h5>Professor</h5>
-                        <p>O Professor tem a missão de ensinar a capacitar o aprendizado de crianças, jovens e adultos.</p>
+                        <p>O Professor tem a missão de ensinar a capacitar o aprendizado de crianças, jovens e adultos.
+                        </p>
                     </a>
                 </article>
 
@@ -103,15 +229,19 @@
                     <a href="https://www.pciconcursos.com.br/vagas/professor-substituto">
                         <span class="category__icon"><i class="uil uil-megaphone"></i></span>
                         <h5>Professor Substituto</h5>
-                        <p>O professor substituto preenche o lugar do professor titular por um curto período (por exemplo, uma semana ou um mês).</p>
+                        <p>O professor substituto preenche o lugar do professor titular por um curto período (por
+                            exemplo, uma semana ou um mês).</p>
                     </a>
                 </article>
 
                 <article class="category">
                     <a href="https://www.pciconcursos.com.br/vagas/coordenador-pedagogico">
                         <span class="category__icon"><i class="uil uil-music"></i></span>
-                        <h5><nobr>Coordenador Pedagogico</nobr></h5>
-                        <p>A Coordenação pedagógica tem como objetivo melhorar as práticas dos professores na formação continuada da escola.</p>
+                        <h5>
+                            <nobr>Coordenador Pedagogico</nobr>
+                        </h5>
+                        <p>A Coordenação pedagógica tem como objetivo melhorar as práticas dos professores na formação
+                            continuada da escola.</p>
                     </a>
                 </article>
             </div>
@@ -128,7 +258,8 @@
                 </div>
                 <div class="course__info">
                     <h4>Adobe Dreamweaver CS6 Design</h4>
-                    <p>O Adobe Dreamweaver CS6 é um dos mais conceituados editores de HTML, é um dos programas mais completos para desenvolvimento e manutenção de sites.</p>
+                    <p>O Adobe Dreamweaver CS6 é um dos mais conceituados editores de HTML, é um dos programas mais
+                        completos para desenvolvimento e manutenção de sites.</p>
                     <a href="cursos.html" class="btn btn-primary">Saber Mais</a>
                 </div>
             </article>
@@ -139,7 +270,8 @@
                 </div>
                 <div class="course__info">
                     <h4>Adobe Fireworks CS6 <br> Design</h4>
-                    <p>O Adobe Fireworks é um software desenvolvido para a criação de layouts, ilustrações e elementos gráficos para sites e aplicações online.</p>
+                    <p>O Adobe Fireworks é um software desenvolvido para a criação de layouts, ilustrações e elementos
+                        gráficos para sites e aplicações online.</p>
                     <a href="cursos.html" class="btn btn-primary">Saber Mais</a>
                 </div>
             </article>
@@ -150,7 +282,8 @@
                 </div>
                 <div class="course__info">
                     <h4>Adobe Ilustrator CS6 <br> Design</h4>
-                    <p>O Adobe Illustrator é um software desenvolvido para a criação de ilustrações gráficas. Este curso apresenta as melhorias criadas para a versão CS6.</p>
+                    <p>O Adobe Illustrator é um software desenvolvido para a criação de ilustrações gráficas. Este curso
+                        apresenta as melhorias criadas para a versão CS6.</p>
                     <a href="cursos.html" class="btn btn-primary">Saber Mais</a>
                 </div>
             </article>
@@ -164,7 +297,8 @@
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Quem pode fazer a inscrição?</h4>
-                    <p>Qualquer Educador, Pedagogo e Estagiário, das redes particulares e conveniadas junto as Secretarias de Educação Municipais e Estaduais.</p>
+                    <p>Qualquer Educador, Pedagogo e Estagiário, das redes particulares e conveniadas junto as
+                        Secretarias de Educação Municipais e Estaduais.</p>
                 </div>
             </article>
 
@@ -185,7 +319,7 @@
                         • Cópia do RG, CPF e título de eleitor;<br>
                         • Comprovante de Residência Atual;<br>
                         • 01 Foto 3x4 recente
-                        
+
                     </p>
                 </div>
             </article>
@@ -205,7 +339,8 @@
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>A forma de pagamento é segura?</h4>
-                    <p>A taxa de inscrição anual é paga diretamente pela mercado pago , e passa por todo o processo de segurança dos seus dados cadastrais.</p>
+                    <p>A taxa de inscrição anual é paga diretamente pela mercado pago , e passa por todo o processo de
+                        segurança dos seus dados cadastrais.</p>
                 </div>
             </article>
 
@@ -221,7 +356,8 @@
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>O CFEP imite certificado?</h4>
-                    <p>Após a confirmação do pagamento pela mercado pago, nós emitimos seu certificado e enviaremos por email um PDF do arquivo, que ira tambem ser enviado junto a carteirinha pelos correios</p>
+                    <p>Após a confirmação do pagamento pela mercado pago, nós emitimos seu certificado e enviaremos por
+                        email um PDF do arquivo, que ira tambem ser enviado junto a carteirinha pelos correios</p>
                 </div>
             </article>
         </div>
@@ -230,7 +366,7 @@
 
     <section class="container testimonials__Container mySwiper">
         <h2>Comentários dos Associados</h2>
-        <div  class="swiper-wrapper">
+        <div class="swiper-wrapper">
             <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar1.jpg" alt="">
@@ -241,16 +377,17 @@
                 </div>
                 <div class="testimonial__body">
                     <p>
-                       Estou super feliz em poder fazer parte do conselho, gostaria de agradecer a todos os funcionarios que me ajudaram, e tiraram todas as minhas duvidas referente a carteirinha 😄
+                        Estou super feliz em poder fazer parte do conselho, gostaria de agradecer a todos os
+                        funcionarios que me ajudaram, e tiraram todas as minhas duvidas referente a carteirinha 😄
                     </p>
 
-                <div class="stars">
-                    <img src="./images/star.png" alt="">
-                    <img src="./images/star.png" alt="">
-                    <img src="./images/star.png" alt="">
-                    <img src="./images/star.png" alt="">
-                    <img src="./images/star.png" alt="">
-                </div>
+                    <div class="stars">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                    </div>
                 </div>
             </article>
 
@@ -264,7 +401,8 @@
                 </div>
                 <div class="testimonial__body">
                     <p>
-                        Gostaria de agradecer ao conselho e a todos do CFEP, precisava da carteirinha na onde tinha passado em um concurso, me atenderem super bem e conseguir passar na entrevista 😍
+                        Gostaria de agradecer ao conselho e a todos do CFEP, precisava da carteirinha na onde tinha
+                        passado em um concurso, me atenderem super bem e conseguir passar na entrevista 😍
                     </p>
                     <div class="stars">
                         <img src="./images/star.png" alt="">
@@ -286,7 +424,8 @@
                 </div>
                 <div class="testimonial__body">
                     <p>
-                        Estou pesquisando vagas e nao encontrava, queria explorar meus conhecimentos, graças ao site, vi sobre vagas, e tenho uma entrevista marcada... 😁
+                        Estou pesquisando vagas e nao encontrava, queria explorar meus conhecimentos, graças ao site, vi
+                        sobre vagas, e tenho uma entrevista marcada... 😁
                     </p>
                     <div class="stars">
                         <img src="./images/star.png" alt="">
@@ -305,7 +444,9 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__1">
-                <a href="index.html" class="footer__logo"><h4>CFEP</h4></a>
+                <a href="index.html" class="footer__logo">
+                    <h4>CFEP</h4>
+                </a>
                 <p>
                     Conselho Federal de <br> Educadores e Pedagogos
                 </p>
@@ -335,21 +476,21 @@
                     <p>contato@cfep.org.br</p>
                 </div>
 
-            <ul class="footer__socials">
-                <li>
-                    <a href="#"><i class="uil uil-facebook-f"></i></a>
-                </li>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
 
-                <li>
-                    <a href="#"><i class="uil uil-instagram"></i></a>
-                </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                    </li>
 
-                <li>
-                    <a href="#"><i class="uil uil-twitter-alt"></i></a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
         <div class="footer__copyright">
             <small>Criado e Desenvolvido por Leandro Castro - CFEP</small>
         </div>
@@ -361,21 +502,40 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
 
-          breakpoints: {
-              600: {
-                  slidesPerView: 2,
-              }
-          }
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+            }
         });
-      </script>
+    </script>
 
+<script>
+    var swiperPopular = new Swiper(".popular__container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+
+<script src="Javascript/swiper-bundle.min.js"></script>
 </body>
 
 </html>
