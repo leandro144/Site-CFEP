@@ -22,24 +22,40 @@
 <body>
 
     <nav>
-        <div class="container nav__container">
-            <a id="flex" href="index.html">
-                <img id="img" src="./images/play_store_512.png" alt="">
-                <h5>CFEP</h5>
-            </a>
-            <ul class="nav__menu">
-                <li><a class="link" href="index.html">Início</a></li>
-                <li><a class="link" href="about.html">Sobre</a></li>
-                <li><a class="link" href="cursos.html">Cursos</a></li>
-                <li><a class="link" href="cursos.html">Serviços</a></li>
-                <li><a class="link" href="contacts.html">Contato</a></li>
-                <li><a class="link" href="https://www.cfepmembros.com.br/">Consulta de Inscritos</a></li>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#"><img src="./images/play_store_512.png" alt=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">CFEP</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">INICIO</a></li>
+              <li>
+                <a href="#">SOBRE O CFEP</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">SOBRE NÓS</a></li>
+                  <li><a href="#">COMO SE INSCREVER ?</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">SERVIÇOS</a>
+                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                <ul class="js-sub-menu sub-menu">
+                  <li><a href="#">CARTEIRA DIGITAL</a></li>
+                  <li><a href="#">CERTIFICADO</a></li>
+                  <li><a href="#">BIBLIOTECA DIGITAL</a></li>
+                  <li><a href="#">BOLETIM CFEP</a></li>
+                </ul>
+              </li>
+              <li><a href="#">CONTATO</a></li>
+              <li><a href="#">CONSULTA DE INSCRITOS</a></li>
             </ul>
-
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <header>
         <div class="container header__container">
@@ -68,123 +84,7 @@
         </div>
     </header>
 
-    <section style="background-color: #fff;" class="popular section" id="popular">
-        <div class="container">
-            <span  class="section__subtitle">Best Choise</span>
-            <h2 class="section__title">
-                Popular Residencies<span>.</span>
-            </h2>
-
-            <div class="popular__container swiper">
-                <div class="swiper-wrapper">
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular1.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular2.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-
-                    
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular2.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular3.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular4.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="popular__card swiper-slide">
-                        <img src="images/popular5.jpg" alt="" class="popular__img">
-                        <div style="color: #000;" class="popular__data">
-                            <h2 class="popular__price">
-                                <span>$</span>66,356
-                            </h2>
-                            <h3 class="popular__title">
-                                Garden City Assat
-                            </h3>
-                            <p class="popular__description">
-                                Lorem ipsum dolor sit, amet consectetur,
-                                - adipisicing elit Voluptatibus, sapiente.
-                            </p>
-                        </div>
-                    </article>
-                    
-                </div>
-                <div class="swiper-button-next">
-                    <box-icon name='chevron-right'></box-icon>
-                </div>
-                <div class="swiper-button-prev">
-                    <box-icon name='chevron-left'></box-icon>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
 
     <section class="categories">
         <div class="container categories__container">
@@ -503,31 +403,30 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-
-            breakpoints: {
-                600: {
-                    slidesPerView: 2,
-                }
-            }
-        });
-    </script>
-
-<script>
-    var swiperPopular = new Swiper(".popular__container", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
+        spaceBetween: 10,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+<script>
+    var swiperPopular = new Swiper(".popular__container", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

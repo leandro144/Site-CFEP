@@ -25,20 +25,28 @@ faqs.forEach(faq => {
 
 // SHOW/HIDE //
 
-const menu = document.querySelector(".nav__menu");
-const menuBtn = document.querySelector("#open-menu-btn");
-const closeBtn = document.querySelector("#close-menu-btn");
-
-menuBtn.addEventListener('click', () => (
-    menu.style.display = "flex",
-    closeBtn.style.display = "inline-block",
-    menuBtn.style.display = "none"
-))
-
-const closeNav = () => {
-    menu.style.display = "none",
-    closeBtn.style.display = "none",
-    menuBtn.style.display = "inline-block"
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
 }
 
-closeBtn.addEventListener('click', closeNav)
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
