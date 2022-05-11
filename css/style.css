@@ -223,7 +223,7 @@ nav .navbar {
 }
 
 .navbar .logo {
-   padding-top: 35px;
+    padding-top: 35px;
 }
 
 nav .navbar .nav-links {
@@ -382,29 +382,108 @@ header {
     margin: 1rem 0 2.4rem;
 }
 
-.card {
-    background-color: #ffff;
+.section {
+    background-color: #fff;
+    padding: 4.5rem 0 2rem;
 }
 
-.card-text {
-    color: #00294f;
+.section__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
-.cards {
-    border: 2px solid #00294f;
-    height: 70vh;
-    border-radius: 10px;
+.section__title span {
+    color: hsl(25, 83%, 53%);
 }
 
-.card-title {
-    color: #00294f;
-    margin-top: 20px;
+.section__subtitle {
+    display: block;
+    font-size: .813rem;
+    ;
+    color: hsl(25, 83%, 53%);
 }
 
-.card-paragraph {
-    color: #00294f;
-    text-align: center;
-    padding: 5px;
+.popular__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.popular__container {
+    padding: 1rem 0 5rem;
+}
+
+.popular__card {
+    width: 290px;
+    background-color: #fff;
+    padding: 5.50rem 1.50rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+.popular__data {
+    padding: 0 1rem 0 .5rem;
+}
+
+.popular__price {
+    font-size: 1.25rem;
+    color: hsl(228, 15%, 50%);
+    margin-bottom: .25rem;
+    text-align: left;
+}
+
+.popular__price span {
+    color: hsl(25, 83%, 53%);
+}
+
+.popular__title {
+    margin-bottom: .75rem;
+    font-size: 1rem;
+    color: hsl(228, 15%, 50%);
+}
+
+.popular__description {
+    font-size: .813rem;
+    color: hsl(228, 15%, 50%);
+}
+
+.popular__card:hover {
+    box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    content: '';
+    display: none;
+}
+
+.swiper-button-next .bx, 
+.swiper-button-prev .bx {
+    position: absolute;
+    top: 480%;
+    width: initial;
+    height: initial;
+    background-color: #fff;
+    border: 2px solid hsl(228, 15%, 50%);
+    padding: 6px;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: hsl(25, 83%, 53%);
+}
+
+.center {
+    margin-top: 6rem;
+}
+
+.swiper-button-next .bx {
+    
+}
+
+.swiper-button-prev .bx {
+   
 }
 
 .categories {
@@ -498,7 +577,7 @@ header {
 }
 
 .courses {
-    margin-top: 10rem;
+    margin-top: 1rem;
 }
 
 .courses__container {
@@ -848,6 +927,7 @@ footer ul li a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
+
     @media (max-width:920px) {
         nav .navbar {
             max-width: 100%;
@@ -999,6 +1079,13 @@ footer ul li a:hover {
 
     /* MEDIA QUERIES CELULAR */
 
+    @media screen and (max-width: 647px) {
+        .swiper-button-next .bx, 
+        .swiper-button-prev .bx {
+            top: 500%;
+        }
+    }
+
     @media screen and (max-width: 600px) {
         .container {
             width: var(--container-width-sm);
@@ -1073,6 +1160,11 @@ footer ul li a:hover {
 
         .footer__socials {
             justify-content: center;
+        }
+
+        .swiper-button-next .bx, 
+        .swiper-button-prev .bx {
+            top: 550%;
         }
 
         @media screen and (max-width: 430px) {

@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/play_store_512.png">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +95,106 @@
             </div>
         </div>
     </header>
+
+    <section class="popular section" id="popular">
+        <div class="container">
+            <h2 style="font-size: 2.5rem;" class="section__subtitle">
+                Noticias
+            </h2>
+            <div class="popular__container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <img src="./images/popular1.jpg" alt="" class="popular__img">
+                        <div class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores,
+                                Lima - Perú Av. Sol #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="./images/popular2.jpg" alt="" class="popular__img">
+                        <div class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores,
+                                Lima - Perú Av. Sol #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="./images/popular3.jpg" alt="" class="popular__img">
+                        <div class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores,
+                                Lima - Perú Av. Sol #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="./images/popular4.jpg" alt="" class="popular__img">
+                        <div class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores,
+                                Lima - Perú Av. Sol #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="./images/popular5.jpg" alt="" class="popular__img">
+                        <div class="popular__data">
+                            <h2 class="popular__price">
+                                <span>$</span>66,356
+                            </h2>
+                            <h3 class="popular__title">
+                                Garden City Assat
+                            </h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores,
+                                Lima - Perú Av. Sol #9876
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="center">
+                    <div class="swiper-button-next">
+                         <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                         <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
 
     <section class="courses">
@@ -408,18 +509,19 @@
 
     <script src="./main.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <script>
-         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        var swiperPopular = new Swiper(".popular__container", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
         },
         breakpoints: {
           640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
@@ -428,21 +530,11 @@
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 50,
           },
-        },
-      });
+    },
+  });
     </script>
-
-<script>
-    var swiperPopular = new Swiper(".popular__container", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-  </script>
-
 <script src="Javascript/swiper-bundle.min.js"></script>
 </body>
 

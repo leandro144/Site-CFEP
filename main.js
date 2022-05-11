@@ -22,6 +22,8 @@ faqs.forEach(faq => {
     })
 })
 
+// SWIPER //
+
 
 // SHOW/HIDE //
 
