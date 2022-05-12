@@ -478,12 +478,14 @@ header {
     margin-top: 6rem;
 }
 
-.swiper-button-next .bx {
-    
+
+/* Centralizar as setas */
+.swiper-button-next{
+    right: calc(50% - 3rem) !important;
 }
 
-.swiper-button-prev .bx {
-   
+.swiper-button-prev{
+    left: calc(50% - 3rem) !important;
 }
 
 .categories {
