@@ -58,21 +58,23 @@ body {
 /* TEAM */
 
 .team {
-    background-color: #1BABE4;
+    background-color: #fff;
+}
+
+.team h2 {
+    color: #202020;
 }
 
 .team__container {
     place-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
 }
 
 .team__member {
     background: linear-gradient(to right, #00294f, #0080cf);
     padding: 2rem;
-    width: 80%;
-    border-radius: 5px;
+    width: 30%;
+    border-radius: 10px;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -116,6 +118,42 @@ body {
     padding: 1rem;
 }
 
+.sobre {
+    background-image: url(../images/bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.missao {
+    text-align: justify;
+}
+
+.missao h4{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.missao p {
+    margin: 0 auto;
+    line-height: 24px;
+    max-width: 350px;
+}
+
+#uil {
+    color: #ff1b0c !important;
+    padding-bottom: 1rem;
+    place-items: center;
+    display: grid;
+    font-size: 70px;
+}
+
 /* MEDIAS QUERIES (IPADS) */
 
 @media screen and (max-width: 1024px) {
@@ -133,13 +171,9 @@ body {
         margin: 0 auto;
     }
 
-    .team__container {
-        grid-template-columns: repeat(3, 1fr) ;
-        gap: 1.5rem;
-    }
-
     .team__member {
         padding: 1rem;
+        width: 80%;
     }
 
     /* MEDIAS QUERIES (CELULAR) */
@@ -150,12 +184,8 @@ body {
            gap: 0.7rem;
         }
 
-        .team__container {
-            grid-template-columns: 1fr 1fr;
-            gap: 0.7rem;
-        }
         .team__member {
-            padding: 0;
+            width: 60%;
         }
 
         .team__member p {

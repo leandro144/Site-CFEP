@@ -328,7 +328,6 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 
-
 .link {
     display: inline-block;
     margin-bottom: 2px;
@@ -448,27 +447,27 @@ header {
 .popular__description {
     font-size: .813rem;
     color: hsl(228, 15%, 50%);
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
 }
 
 .popular__card:hover {
     box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 
-.swiper-button-next::after, 
+.swiper-button-next::after,
 .swiper-button-prev::after {
-    content: '';
-    display: none;
+    content: ''!important;
+    
 }
 
-.swiper-button-next .bx, 
+.swiper-button-next .bx,
 .swiper-button-prev .bx {
     position: absolute;
-    top: 480%;
+    top: 15rem;
     width: initial;
     height: initial;
     background-color: #fff;
@@ -484,11 +483,11 @@ header {
 }
 
 .swiper-button-next {
-    right: calc(50% - 3rem)!important;
+    right: calc(50% - 3rem) !important;
 }
 
 .swiper-button-prev {
-    left: calc(50% - 3rem)!important;
+    left: calc(50% - 3rem) !important;
 }
 
 .categories {
@@ -697,6 +696,14 @@ header {
     align-items: center;
     margin-top: 3rem;
     position: relative;
+}
+
+.testimonial__body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -1084,12 +1091,7 @@ footer ul li a:hover {
 
     /* MEDIA QUERIES CELULAR */
 
-    @media screen and (max-width: 647px) {
-        .swiper-button-next .bx, 
-        .swiper-button-prev .bx {
-            top: 500%;
-        }
-    }
+
 
     @media screen and (max-width: 639px) {
         .center {
@@ -1173,10 +1175,6 @@ footer ul li a:hover {
             justify-content: center;
         }
 
-        .swiper-button-next .bx, 
-        .swiper-button-prev .bx {
-            top: 550%;
-        }
 
         @media screen and (max-width: 430px) {
             .categories__right {
