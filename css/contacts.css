@@ -1,5 +1,6 @@
+
 .contact__container {
-    background: linear-gradient(to right, #00294f, #0080cf);
+    background: var(--color-bg3);
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -12,7 +13,7 @@
 /* ASIDE */
 
 .contact__aside {
-    background: var(--color-bg3);
+    background: var(--color-bg4);
     padding: 3rem;
     border-radius: 1rem;
     position: relative;
