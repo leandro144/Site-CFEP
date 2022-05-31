@@ -30,9 +30,7 @@
     --transition: all 400ms ease;
 
     --hue-color: 250;
-    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
-    /* HSL color mode */
+    
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -57,6 +55,11 @@ body {
 
 
 .container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+.container1 {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
@@ -327,7 +330,6 @@ nav .navbar .links li:hover .js-sub-menu {
     display: none;
 }
 
-
 .link {
     display: inline-block;
     margin-bottom: 2px;
@@ -398,7 +400,6 @@ header {
 .section__subtitle {
     display: block;
     font-size: .813rem;
-    ;
     color: hsl(25, 83%, 53%);
 }
 
@@ -429,7 +430,7 @@ header {
 
 .popular__price {
     font-size: 1.25rem;
-    color: hsl(228, 15%, 50%);
+    color: hsl(228, 98%, 19%);
     margin-bottom: .25rem;
     text-align: left;
 }
@@ -441,7 +442,7 @@ header {
 .popular__title {
     margin: .75rem 0;
     font-size: 1rem;
-    color: hsl(228, 15%, 50%);
+    color: hsl(228, 98%, 19%);
 }
 
 .popular__description {
@@ -472,10 +473,9 @@ header {
     height: initial;
     background-color: #fff;
     border: 2px solid hsl(228, 15%, 50%);
-    padding: 6px;
     border-radius: .5rem;
-    font-size: 1.5rem;
-    color: hsl(25, 83%, 53%);
+    font-size: 3rem;
+    color: hsl(238, 89%, 22%);
 }
 
 .center {

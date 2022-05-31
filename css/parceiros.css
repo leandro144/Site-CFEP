@@ -1,0 +1,42 @@
+.container h1 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.partnerships {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 20px;
+}
+
+.container .partnerships article {
+    width: 90%;
+    height: 90%;
+    margin-top: 3rem;
+    border-radius: 15px;
+    background-color: rgb(253, 250, 250);
+}
+
+article .partnerships-img img {
+    border-radius: 15px;
+}
+
+article .desc {
+    padding: 2%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 20px;
+}
+
+article .desc-p {
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+    color: #181818;
+}
+
+article .text-icon {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
