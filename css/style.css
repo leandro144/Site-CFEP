@@ -468,13 +468,14 @@ header {
 .swiper-button-next .bx,
 .swiper-button-prev .bx {
     position: absolute;
-    top: 15rem;
+    top: 14rem;
     width: initial;
     height: initial;
     background-color: #fff;
     border: 2px solid hsl(228, 15%, 50%);
     border-radius: .5rem;
-    font-size: 3rem;
+    padding: 6px;
+    font-size: 2rem;
     color: hsl(238, 89%, 22%);
 }
 
@@ -1179,12 +1180,17 @@ footer ul li a:hover {
         @media screen and (max-width: 430px) {
             .categories__right {
                 grid-template-columns: 1fr;
-                gap: 1git rem;
+                gap: 1rem;
             }
 
             .category {
                 padding: 0.625rem;
             }
+
+            .swiper-button-next .bx,
+            .swiper-button-prev .bx {
+                top: 10rem;
+}
         }
     }
 }
