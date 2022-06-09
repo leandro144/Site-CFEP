@@ -1,0 +1,20 @@
+
+.course__image img {
+    height: 206px;
+    width: 146px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.course__info p {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.btn {
+    padding: 1rem 2rem;
+}
