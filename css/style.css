@@ -776,12 +776,6 @@ footer ul li a:hover {
     border-top: 2px solid var(--color-bg3);
 }
 
-.question__answer p {
-    display: none;
-}
-
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
