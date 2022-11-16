@@ -80,14 +80,6 @@ body {
     overflow: hidden;
 }
 
-.team__member-image img {
-    filter: saturate(0);
-}
-
-.team__member:hover img {
-    filter: saturate(1);
-}
-
 .team__member-info * {
     text-align: center;
     margin-top: 1.4rem;
@@ -144,6 +136,30 @@ body {
     margin: 0 auto;
     line-height: 24px;
     max-width: 350px;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 2rem;
+}
+
+#uniondiary {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #0080cf;
+    color: #fff;
+    cursor: pointer;
+}
+
+#codeethic {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #0080cf;
+    color: #fff;
+    cursor: pointer;
 }
 
 #uil {

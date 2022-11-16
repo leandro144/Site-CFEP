@@ -37,16 +37,19 @@ navLinks.style.left = "-100%";
 }
 
 
-// sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
-let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
-}
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
-}
+// ****** MODAL ****** //
+
+const ethics = document.getElementById("btnethics")
+const img1 = document.getElementById("img1")
+const backgroundModal = document.querySelector(".backgroundModal")
+const close = document.getElementById("close")
+
+ethics.addEventListener("click", () => {
+    img1.style.display = "block"
+    backgroundModal.style.display = "block"
+})
+
+close.addEventListener("click", () => {
+    img1.style.display = "none"
+    backgroundModal.style.display = "none"
+})

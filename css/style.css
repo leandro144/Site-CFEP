@@ -733,6 +733,51 @@ header {
     width: 25px;
 }
 
+.ethics{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.backgroundModal {
+    background-color: rgb(223, 223, 223);
+    padding: 1rem;
+    display: none;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#btnethics,
+#btncode {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #035c94;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#close {
+    padding: 0.425rem 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #ff0000;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+}
+
+#img1,
+#img2 {
+    width: 80%;
+    height: 750px;
+    margin: 0 auto;
+    display: none;
+}
+
 footer {
     background: linear-gradient(to right, #00294f, #0080cf);
     padding-top: 5rem;
