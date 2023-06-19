@@ -30,7 +30,7 @@
     --transition: all 400ms ease;
 
     --hue-color: 250;
-    
+
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -43,7 +43,6 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
 }
 
 body {
@@ -52,6 +51,27 @@ body {
     color: var(--color-white);
     background: linear-gradient(to right, #00294f, #0080cf);
 }
+
+
+#chat-container {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+
+  .message {
+    margin-bottom: 10px;
+  }
+
+  .user {
+    color: blue;
+  }
+
+  .bot {
+    color: green;
+  }
 
 
 .container {
@@ -211,7 +231,7 @@ nav {
     width: 100%;
     height: 100%;
     height: 70px;
-    background: linear-gradient(to right, #00294f, #0080cf);
+    background: #fff;
     z-index: 99;
 }
 
@@ -251,7 +271,7 @@ nav .navbar .links li a {
     height: 100%;
     text-decoration: none;
     white-space: nowrap;
-    color: #fff;
+    color: #72658B;
     font-size: 1.063rem;
     font-weight: 500;
 }
@@ -461,8 +481,8 @@ header {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    content: ''!important;
-    
+    content: '' !important;
+
 }
 
 .swiper-button-next .bx,
@@ -733,7 +753,7 @@ header {
     width: 25px;
 }
 
-.ethics{
+.ethics {
     background-color: #fff;
     color: #000;
     text-align: center;
@@ -776,6 +796,10 @@ header {
     height: 750px;
     margin: 0 auto;
     display: none;
+}
+
+#img2 {
+    height: 450px !important;
 }
 
 footer {
@@ -821,8 +845,9 @@ footer ul li a:hover {
     border-top: 2px solid var(--color-bg3);
 }
 
-/* MEDIA QUERIES */
 
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
@@ -1233,7 +1258,7 @@ footer ul li a:hover {
             .swiper-button-next .bx,
             .swiper-button-prev .bx {
                 top: 10rem;
-}
+            }
         }
     }
 }
