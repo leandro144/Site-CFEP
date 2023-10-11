@@ -19,10 +19,7 @@ faqs.forEach(faq => {
     })
 })
 
-// SWIPER //
 
-
-// SHOW/HIDE //
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
@@ -37,12 +34,40 @@ menuCloseBtn.onclick = function () {
 
 // ****** MODAL ****** //
 
-const ethics = document.getElementById("btnethics")
-const btncode = document.getElementById("btncode")
-const img1 = document.getElementById("img1")
-const img2 = document.getElementById("img2")
-const backgroundModal = document.querySelector(".backgroundModal")
-const close = document.getElementById("close")
+let ethics = document.getElementById("btnethics")
+let btncode = document.getElementById("btncode")
+let img1 = document.getElementById("img1")
+let img2 = document.getElementById("img2")
+let backgroundModal = document.querySelector(".backgroundModal")
+let close = document.getElementById("close")
+
+ethics.addEventListener('click', () => {
+  if(1 > 0) {
+    backgroundModal.style.display = "block"
+    img1.style.display = "block"
+    img2.style.display = "none"
+    close.style.display = "block"
+    close.addEventListener('click', () => {
+      backgroundModal.style.display = "none"
+    })
+  }
+})
+
+btncode.addEventListener('click', () => {
+  if(1 > 0) {
+    backgroundModal.style.display = "block"
+    img2.style.display = "block"
+    img1.style.display = "none"
+    close.style.display = "block"
+    close.addEventListener('click', () => {
+      backgroundModal.style.display = "none"
+    })
+  }
+})
+
+
+
+
 
 
 let musicas = [

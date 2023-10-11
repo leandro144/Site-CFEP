@@ -790,8 +790,7 @@ header {
     font-size: 1rem;
 }
 
-#img1,
-#img2 {
+#img1 {
     width: 80%;
     height: 750px;
     margin: 0 auto;
@@ -799,7 +798,10 @@ header {
 }
 
 #img2 {
-    height: 450px !important;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    height: 450px;
 }
 
 footer {
@@ -844,7 +846,6 @@ footer ul li a:hover {
     padding: 1.2rem 0;
     border-top: 2px solid var(--color-bg3);
 }
-
 
 
 /* MEDIA QUERIES */
