@@ -118,9 +118,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        padding: 0 2%;
-    }
+  
     .indica {
         justify-content: center;
         flex-direction: column;
@@ -129,6 +127,7 @@ footer {
     .aside, .news {
         max-width: 800px;
         margin: 0 auto;
+        padding: 0 2%;
     }
 
     .indica p {
